@@ -1,0 +1,78 @@
+#container{
+    height: 400px;
+    width: 400px;
+    font-size: 0.2em;
+    background-color: dodgerblue;
+    animation-name: couleurs, rotation;
+    animation-duration: 10s, 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes couleurs {
+
+    0% {
+        background-color: antiquewhite;
+        font-size: 0.8rem;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        background-color: aliceblue;
+        font-size: 1.5rem;
+        transform: rotate(90deg);
+    }
+
+    50% {
+        background-color: #aabdc7;
+        font-size: 0.9rem;
+        transform: rotate(180deg);
+    }
+
+    75% {
+        background-color: lightgray;
+        font-size: 1rem;
+        transform: rotate(260deg);
+    }
+
+    100% {
+        background-color: cornflowerblue;
+        font-size: 2.0rem;
+        transform: rotate(360deg);
+    }
+}
+
+#ballon{
+    background-color: yellow;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    animation-name: ballon;
+    animation-duration: 10s, 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes ballon {
+
+    0% {
+        transform: translate(-200px, 300px);
+    }
+
+    25% {
+        transform: translate(330px, 100px);
+    }
+
+    50% {
+        transform: translate(860px, -100px);
+    }
+
+    75% {
+        transform: translate(1390px, 100px);
+    }
+
+    100% {
+        transform: translate(1700px, 400px);
+    }
+}
